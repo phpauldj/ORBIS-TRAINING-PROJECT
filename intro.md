@@ -5,6 +5,5 @@ Rpta: La integración continua es una práctica de desarrollo de software median
 DevOps (acrónimo inglés de *development* -desarrollo- y *operations* -operaciones-) es una práctica de ingeniería de software que tiene como objetivo unificar el desarrollo de software (**Dev**) y la operación del software (**Ops**). La principal característica del movimiento DevOps es defender enérgicamente la automatización y el monitoreo en todos los pasos de la construcción del software, desde la integración, las pruebas, la liberación hasta la implementación y la administración de la infraestructura. DevOps apunta a ciclos de desarrollo más cortos, mayor frecuencia de implementación, lanzamientos más confiables, en estrecha alineación con los objetivos comerciales.
 
 ![Devops Graphic](images/Devops.svg)
-Format: ![Alt Text](url)
 Ilustración que muestra DevOps como la intersección de desarrollo, operaciones de tecnología y calidad (QA)
 
