@@ -1,10 +1,11 @@
 # Ejercicio 1
 Capacitación: Git, bash y docker
 Integrantes:
-- Paul Carlos Taboada Casas
-- Davis Palomino
+* Paul Carlos Taboada Casas
+* Davis Palomino
+* Pedro Vega
 
-Preguntas:
+## Preguntas:
 1. ¿Qué es y para qué sirve GIT?
 Rpta: Es un Sistema de Control de Versiones, que ayuda a administracion las versiones del codigo de un proyecto de software.
 
