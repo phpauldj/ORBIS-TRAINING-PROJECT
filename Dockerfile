@@ -1,4 +1,4 @@
-FROM node:10.10.0-slim
+FROM nginx:alpine
 LABEL maintainer="paul.taboada@orbis.com.pe"
 
 RUN mkdir /app

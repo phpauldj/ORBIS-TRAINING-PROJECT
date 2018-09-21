@@ -1,6 +1,8 @@
 docker build -t ptaboada/orbis-training-docker:0.1.0 .
 docker push ptaboada/orbis-training-docker
 docker tag 21f9268b8a6e ptaboada/orbis-training-docker:0.2.0 
+docker run -d -p "1080:80" ptaboada/orbis-training-docker:1.0.0
+docker-compose up -d 
 
 /*
 1. ¿Qué importancia tiene los tags en un proyecto?

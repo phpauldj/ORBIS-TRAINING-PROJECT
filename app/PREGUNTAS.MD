@@ -63,4 +63,47 @@ El docker ps te muestra los contenedores que estan corriendo y el ps -a todos lo
 4. Comando para Ejecutar el contenedor de Docker:
 * docker run -it ptaboada/orbis-training-docker:0.2.0 bash
 
+## Preguntas DOCKER: Part. 4:
+1. ¿Cuál es la diferencia entre una imagen y un contenedor?
+Una imagen vendria a ser una plantilla y el contenedor es una instancia de una imagen.
+
+2. ¿Cómo listo las imágenes que hay en mi computadora?
+Lo listo con el comando: docker images
+Extra: para eliminar las imagenes crasheadas ejecutar el siguiente comando: docker rmi $(docker images | awk '/^<none>/ {print $3}')
+Ref.: https://medium.com/@rasheedamir/docker-remove-all-untagged-images-58e2585ec270
+
+3. ¿Cómo salgo de un contenedor de docker?
+Ejecutando el comando exit dentro de la consola del contenedor.
+
+4. ¿Se elimina el contenedor al salir de ella?
+No
+
+5. ¿Cómo elimino un contenedor?
+Con el comando: docker rm [CONTAINER_ID]
+
+6. ¿Para qué es necesario el flag `-i`, `-t`, `--rm`?
+-i: modo interactivo, que te permite ejecutar los comandos shell dentro del contenedor.
+-t: activa el termian, el cual seria la interfaz donde se ejecuta los comandos shell en el contenedor.
+--rm: elimina el contenedor generado luego de ser detenido (no se visualiza en el docker ps -a).
+
+7. ¿Cómo verifico que el archivo creado se encuentra en la imagen?
+Para validar si el archivo ha sido creado, levantamos un contenedor de la imagen y ingresamos al contenedor para validar si el archivo ha sido creado.
+
+8. ¿Cómo se comenta una linea de código en Dockerfile?
+Con el caracter # (michi)
+
+## Preguntas DOCKER: Part. 5:
+1. ¿Qué es NGINX?
+Nginx ​ es un servidor web/proxy inverso ligero de alto rendimiento y un proxy para protocolos de correo electrónico.​​ Es software libre y de código abierto, licenciado bajo la Licencia BSD simplificada; también existe una versión comercial distribuida bajo el nombre de Nginx Plus.​
+
+2. ¿Cómo expongo puertos en docker?
+En docker cli con el option: -p
+En docker-compose con el atributo "ports:" dentro del servicio.
+
+3. ¿Cómo especifico los puertos al levantar un contenedor (docker run)?
+Con el comando -p "[NRO.PUERTO EXPUESTO:NRO.PUERTO CONTAINER]"
+
+4. ¿Cómo hago 'forward' al levantar un contenedor (docker run)?
+Exponer a un puerto externo relacionado al puerto del contenedor de docker por medio de la opcion -p
+
 
