@@ -49,3 +49,18 @@ Integrantes:
 * git rebase, permite gestionar los cambios de una rama sobre otra, se tienen varias opciones para ejecutar durante el proceso.
 * git merge, permite mezclar los cambios de una rama a otra.
 * git branch, permite crear una rama en un repositorio.
+
+## Preguntas DOCKER: Part. 3:
+1. ¿Porqué es necesario crear un contenedor con esta bandera -it ? ¿Qué pasa si no le pongo -it?
+Por que te permite ingresar a la consola del contenedor de manera interactiva y asi poder ejecutar comandos shell, si no pones -it ejecuta el comando X y sale.
+
+2. ¿Para qué sirve ejecutar el comando bash al ejecutar una imagen?
+Para que ejecute el programa de consola y asi poder ejecutar comandos shell dentro del contenedor.
+
+3. ¿Cuál es la diferencia entre docker ps y docker ps -a?
+El docker ps te muestra los contenedores que estan corriendo y el ps -a todos los contenedores que existan.
+
+4. Comando para Ejecutar el contenedor de Docker:
+* docker run -it ptaboada/orbis-training-docker:0.2.0 bash
+
+
