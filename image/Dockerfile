@@ -2,4 +2,7 @@ FROM node:10.10.0-slim
 
 RUN mkdir app/
 
-# RUN npm install
+WORKDIR app/
+
+EXPOSE 3030
+EXPOSE 35729

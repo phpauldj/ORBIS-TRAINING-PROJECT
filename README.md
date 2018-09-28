@@ -36,3 +36,5 @@ Con la version latest
 
 docker run -v $PWD/resources:/app ptaboada/orbis-training-docker:2.0.0 sh -c "cd app && npm install && ls -al"
 
+docker run -v $(pwd):/app -it -p 3030:3030 ptaboada/orbis-training-docker:2.0.0 sh -c "npm install && npm start"
+
