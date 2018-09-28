@@ -12,6 +12,8 @@ Integrantes:
 2. ¿Que es Github o bitbucket?
 * Rpta: Son repositorios de codigo que trabajan con sistemas de control de versiones, que se conectan a servidores remotos.
 
+---
+
 3. ¿Qué es y para qué sirve el SSH?
 * Rpta: SSH o Secure Shell es un protocolo que falicita las comunicaciones seguras entre dos sistemas usando una arquitectura cliente/servidor, y que te permite a los usuarios conectarse a un host remotamente.
 
@@ -20,6 +22,8 @@ Integrantes:
 
 5. ¿Qué es markdown? ¿Para qué sirve?
 * Rpta: Markdown es un lenguaje de marcado ligero creado por John Gruber que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida, inspirándose en muchas convenciones existentes para marcar mensajes de correo electrónico usando texto plano. Se distribuye bajo licencia BSD y se distribuye como plugin (o al menos está disponible) en diferentes sistemas de gestión de contenidos (CMS). Markdown convierte el texto marcado en documentos XHTML utilizando html2text creado por Aaron Swartz. Markdown fue implementado originariamente en Perl por Gruber, pero desde entonces ha sido traducido a multitud de lenguajes de programación, incluyendo PHP, Python, Ruby, Java y Common Lisp.
+
+---
 
 6. ¿Cómo inicializo y configuro un proyecto de git?
 * Rpta: Se inicializa con git init, y se puede configurar git config, dentro de este tiene varias opciones como agregar un nombre y correo de usuario, que editor de texto se usa para abrir textos planos, generar abreviados de los comandos, el estilo, etc.
@@ -33,6 +37,8 @@ Integrantes:
 
 3. ¿Qué significa el modo interactivo del `git rebase`?
 * Rpta: El modo interactivo es poder gestionar los commits agregados hasta el momento del rebase, se puede modificar, mezclar, eliminar la lista de commits y otras opciones mas.
+
+---
 
 4. ¿Cual es la diferencia entre la shell y la terminal?
 * Rpta: El shell es la linea de comandos que se ejecutan en una consola (terminal), que vendria a ser la interfaz para poder ejecutarlos.
@@ -50,6 +56,8 @@ Integrantes:
 * git merge, permite mezclar los cambios de una rama a otra.
 * git branch, permite crear una rama en un repositorio.
 
+---
+
 ## Preguntas DOCKER: Part. 3:
 1. ¿Porqué es necesario crear un contenedor con esta bandera -it ? ¿Qué pasa si no le pongo -it?
 Por que te permite ingresar a la consola del contenedor de manera interactiva y asi poder ejecutar comandos shell, si no pones -it ejecuta el comando X y sale.
@@ -62,6 +70,8 @@ El docker ps te muestra los contenedores que estan corriendo y el ps -a todos lo
 
 4. Comando para Ejecutar el contenedor de Docker:
 * docker run -it ptaboada/orbis-training-docker:0.2.0 bash
+
+---
 
 ## Preguntas DOCKER: Part. 4:
 1. ¿Cuál es la diferencia entre una imagen y un contenedor?
@@ -86,6 +96,8 @@ Con el comando: docker rm [CONTAINER_ID]
 -t: activa el termian, el cual seria la interfaz donde se ejecuta los comandos shell en el contenedor.
 --rm: elimina el contenedor generado luego de ser detenido (no se visualiza en el docker ps -a).
 
+---
+
 7. ¿Cómo verifico que el archivo creado se encuentra en la imagen?
 Para validar si el archivo ha sido creado, levantamos un contenedor de la imagen y ingresamos al contenedor para validar si el archivo ha sido creado.
 
@@ -105,5 +117,3 @@ Con el comando -p "[NRO.PUERTO EXPUESTO:NRO.PUERTO CONTAINER]"
 
 4. ¿Cómo hago 'forward' al levantar un contenedor (docker run)?
 Exponer a un puerto externo relacionado al puerto del contenedor de docker por medio de la opcion -p
-
-
