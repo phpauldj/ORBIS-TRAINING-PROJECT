@@ -117,3 +117,43 @@ Con el comando -p "[NRO.PUERTO EXPUESTO:NRO.PUERTO CONTAINER]"
 
 4. ¿Cómo hago 'forward' al levantar un contenedor (docker run)?
 Exponer a un puerto externo relacionado al puerto del contenedor de docker por medio de la opcion -p
+
+---
+
+## Preguntas DOCKER: Part. 6:
+
+1. ¿Es necesario especificar el `workdir` en docker?, ¿Porqué?
+
+No es necesario, pero es de gran ayuda para especificar una ruta raiz del proyecto y no estar ingresando constantemente.
+
+2. ¿Que hacen los siguientes comandos? 
+- `docker ps`: Muestra los containers activos de docker.
+- `docker pull`: Baja las imagenes publicadas en docker hub.
+- `docker push`: Sube los cambios realizado a la imagen de docker.
+- `docker rm`: Eliminar un container.
+- `docker rmi`: Eliminar imagenes.
+- `docker run`: Ejecuta un container en base a una imagen.
+- `docker tag`: Permite agregar o modificar tag a las imagenes docker.
+- `docker search`: Permite buscar las imagenes existentes en docker hub según un termino.
+- `docker login`: Permite logearte a tu repositorio de docker.
+- `docker exec`: Permite ejecutar comando dentro de un container activo.
+- `docker build`: Permite construir imagenes en base a un dockerfile.
+- `docker inspect`: Permite ver caracteristicas de los objetos de docker (imagenes, redes y containers).
+- `docker network`: Permite administrar redes dentro de docker.
+
+## Preguntas DOCKER: Part. 7:
+
+1. ¿Qué es bash? ¿Qué significa?
+- Es un programa informático, cuya función consiste en interpretar órdenes, y un lenguaje de consola. BASH significa The Bourne-Again Shell
+
+2. ¿Cómo ejecuto un archivo bash?
+- Con el comando bash, sh o ./ (si tiene permisos de ejecucion) en linux
+
+3. ¿Qué pasa si no especifico en un `.sh`, la linea `#!/bin/bash`?
+No pasa nada, igual al usar el comando sh o bash lo interpreta como codigo bash
+
+4. ¿Se puede cambiar el modo bash (`/bin/bash`) a otro tipo de ejecución?
+Si, pero no ejecutaria la linea de comandos por que no podria entenderlo
+
+5. ¿Cómo se envía variables de entorno por Docker CLI y docker-compose?
+Usando el docker cli se añade el parametro -e y en el docker-compose en la seccion environment

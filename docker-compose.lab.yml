@@ -2,9 +2,23 @@ version: '3'
 services:
 
   nginx:
+
     image: ptaboada/orbis-training-docker:2.2.0
     volumes:
       - $PWD:/app
     ports:
       - "1042:1042"
     command: npm start
+    networks: 
+      - network_default
+  
+  test:
+    image: node:10.10.0-slim
+    command: curl http://nginx:1042
+    networks: 
+      - network_default
+    depends_on: 
+      - nginx
+
+networks:
+  network_default:

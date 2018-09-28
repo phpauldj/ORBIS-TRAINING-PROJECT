@@ -40,4 +40,8 @@ docker run -v $(pwd):/app -it -p 3030:3030 ptaboada/orbis-training-docker:2.0.0 
 
 docker run -v $(pwd):/app -it -p 1042:1042 ptaboada/orbis-training-docker:2.1.0 sh -c "npm install && npm start"
 
-docker run -v $PWD:/app ptaboada/orbis-training-docker:2.2.0 sh -c "npm install && npm run release"
+docker run -v $(pwd):/app -p 1042:1042 ptaboada/orbis-training-docker:2.2.0 sh -c "npm start && npm run release"
+
+docker run -it -v $PWD/resources/example.sh:/example.sh node:10.10.0-slim sh example.sh
+
+docker run --entrypoint=/bin/bash -v $PWD/resources:/app node:10.10.0-slim app/message.sh
