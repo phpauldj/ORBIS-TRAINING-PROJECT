@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  nginx:
+    image: ptaboada/orbis-training-docker:2.2.0
+    volumes:
+      - $PWD:/app
+    ports:
+      - "1042:1042"
+    command: npm start

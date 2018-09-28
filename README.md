@@ -38,3 +38,6 @@ docker run -v $PWD/resources:/app ptaboada/orbis-training-docker:2.0.0 sh -c "cd
 
 docker run -v $(pwd):/app -it -p 3030:3030 ptaboada/orbis-training-docker:2.0.0 sh -c "npm install && npm start"
 
+docker run -v $(pwd):/app -it -p 1042:1042 ptaboada/orbis-training-docker:2.1.0 sh -c "npm install && npm start"
+
+docker run -v $PWD:/app ptaboada/orbis-training-docker:2.2.0 sh -c "npm install && npm run release"

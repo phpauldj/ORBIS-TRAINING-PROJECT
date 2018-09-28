@@ -1,8 +1,8 @@
 FROM node:10.10.0-slim
 
-RUN mkdir app/
+RUN mkdir /app
 
-WORKDIR app/
+WORKDIR /app
 
-EXPOSE 3030
+EXPOSE 1042
 EXPOSE 35729
