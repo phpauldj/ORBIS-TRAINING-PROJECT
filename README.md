@@ -33,3 +33,6 @@ Para identificar el usuario o cuenta
 9. ¿Que pasa si creo una imagen sin especificar una versión o tag, con qué versión se crea?
 Con la version latest
 */
+
+docker run -v $PWD/resources:/app ptaboada/orbis-training-docker:2.0.0 sh -c "cd app && npm install && ls -al"
+
