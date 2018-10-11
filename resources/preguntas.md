@@ -141,6 +141,8 @@ No es necesario, pero es de gran ayuda para especificar una ruta raiz del proyec
 - `docker inspect`: Permite ver caracteristicas de los objetos de docker (imagenes, redes y containers).
 - `docker network`: Permite administrar redes dentro de docker.
 
+---
+
 ## Preguntas DOCKER: Part. 7:
 
 1. ¿Qué es bash? ¿Qué significa?
